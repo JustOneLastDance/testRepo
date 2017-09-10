@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let anotherView: AnotherViewController = AnotherViewController()
         present(anotherView, animated: true, completion: nil)
+        
+        view.backgroundColor = UIColor.red
     }
 
 }
