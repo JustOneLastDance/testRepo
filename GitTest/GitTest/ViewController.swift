@@ -21,18 +21,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let anotherView: AnotherViewController = AnotherViewController()
-        present(anotherView, animated: true, completion: nil)
-        
-        view.backgroundColor = UIColor.red
+        print("click me!!!")
+        changeColor()
     }
-
+    
 }
 
 extension ViewController {
     func changeColor() {
-        print("test")
+        if view.backgroundColor == UIColor.purple {
+            view.backgroundColor = UIColor.blue
+        } else {
+            view.backgroundColor = UIColor.purple
+        }
     }
 }
