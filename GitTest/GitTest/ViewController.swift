@@ -24,7 +24,18 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("click me!!!")
+        changeColor()
     }
     
+}
+
+extension ViewController {
+    func changeColor() {
+        if view.backgroundColor == UIColor.purple {
+            view.backgroundColor = UIColor.blue
+        } else {
+            view.backgroundColor = UIColor.purple
+        }
+    }
 }
 
