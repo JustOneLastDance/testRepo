@@ -31,3 +31,8 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController {
+    func changeColor() {
+        print("test")
+    }
+}
